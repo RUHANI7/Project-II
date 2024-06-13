@@ -10,7 +10,8 @@ import numpy as np
 # PowerPoint setup
 Application = win32com.client.Dispatch("PowerPoint.Application")
 Presentation = Application.Presentations.Open(
-    "C:/Users/KIIT/Downloads/PPT-Presentation-controlled-by-hand-gesture-main/PPT-Presentation-controlled-by-hand-gesture-main/zani.pptx")
+    "C:/Users/KIIT/Downloads/PPT-Presentation-controlled-by-hand-gesture-main/PPT-Presentation-controlled-by-hand-gesture-main/zani.pptx") 
+# Change the source url as per the location of file you are using  
 print(Presentation.Name)
 Presentation.SlideShowSettings.Run()
 
